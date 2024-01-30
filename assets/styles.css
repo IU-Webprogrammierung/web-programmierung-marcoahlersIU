@@ -99,3 +99,48 @@ body {
     padding: 4rem;
   }
 }
+
+.hero-section-avatar img {
+  width: 5rem;
+  height: auto;
+}
+
+.hero-section-text {
+  max-width: 38rem;
+}
+
+.hero-section-text h1 {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  font-weight: 700;
+  margin-top: 2rem;
+}
+
+@media (min-width: 600px) {
+  .hero-section-text h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+}
+
+.hero-section-text p {
+  font-size: 1rem;
+  margin-top: 2rem;
+  color: var(--muted-light);
+}
+
+.hero-section-social-links {
+  display: flex;
+  margin-top: 2rem;
+  gap: 0.5rem;
+}
+
+.hero-section-social-links svg {
+  width: 1.75rem;
+  height: 1.75rem;
+  fill: var(--muted-light);
+}
+
+.hero-section-social-links svg:hover {
+  fill: var(--muted);
+}
