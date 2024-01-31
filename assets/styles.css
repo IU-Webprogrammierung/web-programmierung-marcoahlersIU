@@ -274,3 +274,10 @@ body {
   font-weight: 700;
   font-size: 0.9rem;
 }
+
+.footer-section {
+  color: var(--muted-light);
+  font-size: 0.9rem;
+  padding-top: 0;
+  padding-bottom: 1rem;
+}
