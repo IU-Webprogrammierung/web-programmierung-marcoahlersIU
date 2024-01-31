@@ -224,6 +224,7 @@ body {
   border: 1px solid var(--muted-light);
   border-radius: 1rem;
   overflow: hidden;
+  color: #000;
 }
 
 .project-list-item:hover {
@@ -296,4 +297,28 @@ body {
 .context-list-item-title {
   font-weight: 700;
   font-size: 0.9rem;
+}
+
+.text-content {
+  max-width: 680px;
+  margin: 1rem auto 0 auto;
+}
+
+.text-content h1 {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
+.text-content p {
+  font-size: 1rem;
+  color: var(--muted-light);
+  margin: 1rem 0;
+}
+
+.text-content img {
+  width: 100%;
+  height: auto;
+  margin: 1rem 0;
 }
