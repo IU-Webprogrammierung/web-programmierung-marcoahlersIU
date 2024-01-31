@@ -31,6 +31,15 @@ img {
 }
 /* --> */
 
+a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 :root {
   --background: #fafafa;
   --foreground: #fff;
@@ -82,13 +91,11 @@ html {
 html {
   font-family: Inter, sans-serif;
   background-color: var(--background);
-  height: 100%;
   width: 100%;
 }
 
 body {
   background-color: var(--foreground);
-  height: 100%;
   max-width: 1024px;
   margin: 0 auto;
 }
@@ -130,8 +137,8 @@ body {
 
 @media (min-width: 600px) {
   .hero-section-text h1 {
-    font-size: 3rem;
-    line-height: 3.5rem;
+    font-size: 2.75rem;
+    line-height: 3.25rem;
   }
 }
 
@@ -212,17 +219,34 @@ body {
 
 .view-all-link {
   grid-column: span 2 / span 2;
-  color: var(--muted);
-  text-decoration: none;
   margin-left: 1rem;
-}
-
-.view-all-link:hover {
-  text-decoration: underline;
 }
 
 @media (min-width: 800px) {
   .view-all-link {
     grid-column: span 3 / span 3;
   }
+}
+
+.article-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card {
+  border: 1px solid var(--muted-light);
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.card-description {
+  color: var(--muted-light);
+  margin-bottom: 0.75rem;
 }
