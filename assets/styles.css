@@ -147,6 +147,7 @@ body {
 .hero-section-avatar img {
   width: 5rem;
   height: auto;
+  border-radius: 9999px;
 }
 
 .hero-section-text {
@@ -157,7 +158,7 @@ body {
   font-size: 2.5rem;
   line-height: 3rem;
   font-weight: 700;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 
 @media (min-width: 600px) {
