@@ -46,10 +46,10 @@ a:hover {
 }
 
 :root {
-  --background: #fafafa;
+  --background: #f8f9fa;
   --foreground: #fff;
-  --muted: #52525b;
-  --muted-light: #71717a;
+  --muted: #343a40;
+  --muted-light: #e9ecef;
 }
 
 @font-face {
@@ -96,11 +96,13 @@ html {
 
 body {
   background-color: var(--foreground);
-  max-width: 1024px;
+  max-width: 1080px;
   margin: 0 auto;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  border-left: 1px solid var(--muted-light);
+  border-right: 1px solid var(--muted-light);
 }
 
 .content {
@@ -112,7 +114,7 @@ body {
 }
 
 .footer-text {
-  color: var(--muted-light);
+  color: var(--muted);
   font-size: 0.9rem;
   padding: 0 2rem 0 2rem;
 }
@@ -168,7 +170,7 @@ body {
 .hero-section-text p {
   font-size: 1rem;
   margin-top: 2rem;
-  color: var(--muted-light);
+  color: var(--muted);
 }
 
 .hero-section-social-links {
@@ -180,7 +182,7 @@ body {
 .hero-section-social-links svg {
   width: 1.75rem;
   height: 1.75rem;
-  fill: var(--muted-light);
+  fill: var(--muted);
 }
 
 .hero-section-social-links svg:hover {
@@ -246,6 +248,7 @@ body {
 .project-list-item-title {
   padding: 0.75rem 1rem;
   line-height: 1rem;
+  border-top: 1px solid var(--muted-light);
 }
 
 .view-all-link {
@@ -274,7 +277,7 @@ body {
 .card-subtitle {
   font-size: 0.9rem;
   font-weight: 600;
-  color: var(--muted-light);
+  color: var(--muted);
   margin-bottom: 0.5rem;
 }
 
@@ -285,7 +288,7 @@ body {
 }
 
 .card-description {
-  color: var(--muted-light);
+  color: var(--muted);
   margin-bottom: 0.75rem;
 }
 
@@ -327,7 +330,7 @@ body {
 
 .text-content p {
   font-size: 1rem;
-  color: var(--muted-light);
+  color: var(--muted);
   margin: 1rem 0;
 }
 
