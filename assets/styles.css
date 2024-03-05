@@ -228,6 +228,10 @@ body {
 }
 
 .project-list-item:hover {
+  background-color: var(--background);
+}
+
+.project-list-item:hover {
   cursor: pointer;
 }
 
@@ -277,6 +281,10 @@ body {
   border: 1px solid var(--muted-light);
   border-radius: 0.5rem;
   padding: 1.5rem;
+}
+
+.card:hover {
+  background-color: var(--background);
 }
 
 .card-subtitle {
