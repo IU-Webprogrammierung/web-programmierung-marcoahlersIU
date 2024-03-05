@@ -8,9 +8,9 @@
     <title>Marco Ahlers - Software Developer</title>
   </head>
   <body>
-    <div class="content">
+    <main class="content">
       <!-- Hero Section-->
-      <section class="page-section">
+      <header class="page-section">
         <div class="hero-section-avatar">
           <!-- TODO: replace with real image-->
           <img
@@ -37,7 +37,7 @@
             </svg>
           </a>
         </div>
-      </section>
+      </header>
 
       <!-- Projects Section -->
       <section class="page-section">
@@ -45,40 +45,46 @@
           <div class="page-section-title">
             <h3>Projects</h3>
           </div>
-          <!-- TODO: link to real project pages -->
-          <div class="project-list">
-            <a class="project-list-item" href="./projects/rechain.html">
-              <div class="project-list-item-image-container">
-                <img
-                  src="./assets/img/rechain-thumbnail.webp"
-                  alt="Person holding a tablet displaying an app interface for construction site documentation, showing images of a building in various stages of renovation"
-                />
-              </div>
-  
-              <div class="project-list-item-title">Rechain</div>
-            </a>
-            <a class="project-list-item" href="./projects/jp-website.html">
-              <div class="project-list-item-image-container">
-                <img
-                  src="./assets/img/jp-website-thumbnail.png"
-                  alt="Homepage of J&P Media Labs advertising agency, displaying a bold and colorful abstract design with navigation menu and a compelling company description highlighting their expertise in print, web, and advertising technology."
-                />
-              </div>
-              <div class="project-list-item-title">J&P Media Labs</div>
-            </a>
-            <a class="project-list-item" href="./projects/hinweisgeber.html">
-              <div class="project-list-item-image-container">
-                <img
-                  src="./assets/img/hinweisgeber-thumbnail.webp"
-                  alt="placeholder iamge"
-                />
-              </div>
-              <div class="project-list-item-title">Hinweisgeber.in</div>
-            </a>
+          <ul class="project-list">
+            <li class="project-list-item">  
+              <a href="./projects/rechain.html">
+                <div class="project-list-item-image-container">
+                  <img
+                    src="./assets/img/rechain-thumbnail.webp"
+                    alt="Person holding a tablet displaying an app interface for construction site documentation, showing images of a building in various stages of renovation"
+                  />
+                </div>
+    
+                <div class="project-list-item-title">Rechain</div>
+              </a>
+            </li>
+            
+            <li class="project-list-item"> 
+              <a href="./projects/jp-website.html">
+                <div class="project-list-item-image-container">
+                  <img
+                    src="./assets/img/jp-website-thumbnail.png"
+                    alt="Homepage of J&P Media Labs advertising agency, displaying a bold and colorful abstract design with navigation menu and a compelling company description highlighting their expertise in print, web, and advertising technology."
+                  />
+                </div>
+                <div class="project-list-item-title">J&P Media Labs</div>
+              </a>
+            </li>
 
+            <li class="project-list-item">
+              <a href="./projects/hinweisgeber.html">
+                <div class="project-list-item-image-container">
+                  <img
+                    src="./assets/img/hinweisgeber-thumbnail.webp"
+                    alt="placeholder iamge"
+                  />
+                </div>
+                <div class="project-list-item-title">Hinweisgeber.in</div>
+              </a>
+            </li>
             <a href="./projects.html" class="view-all-link">View All</a>
           </div>
-        </div>
+        </ul>
       </section>
 
       <!-- Blog Section-->
@@ -88,8 +94,8 @@
             <h3>Blog</h3>
           </div>
           <!-- TODO: link to real article pages -->
-          <div class="card-list">
-            <div class="card">
+          <ul class="card-list">
+            <li class="card">
               <h3 class="card-title">
                 Flexbox vs. Grid - A Practical Comparison
               </h3>
@@ -102,8 +108,8 @@
               <a href="./articles/flexbox-vs-grid.html" class="card-link"
                 >Open Article</a
               >
-            </div>
-            <div class="card">
+            </li>
+            <li class="card">
               <h3 class="card-title">
                 Mastering Clean Code: Essential Practices for Web Developers
               </h3>
@@ -116,9 +122,9 @@
               <a href="./articles/clean-code.html" class="card-link"
                 >Open Article</a
               >
-            </div>
+            </li>
             <a href="./blog.html" class="view-all-link">View All</a>
-          </div>
+          </ul>
         </div>
       </section>
 
@@ -128,24 +134,24 @@
           <div class="page-section-title">
             <h3>Experience</h3>
           </div>
-          <div class="card-list">
-            <div class="card">
+          <ul class="card-list">
+            <li class="card">
               <h4 class="card-subtitle">Software-Developer (2018 - 2024)</h3>
               <h3 class="card-title">Gridventures</h3>
               <p class="card-description">
                 At Gridventures, I've been engaged in software development for a variety of client and in-house projects, focusing on delivering innovative and user-centric solutions.
               </p>
-            </div>
+            </li>
 
-            <div class="card">
+            <li class="card">
               <h4 class="card-subtitle">Internships (2015 - 2017)</h3>
               <h3 class="card-title">new-data-services, Sharpness</h3>
               <p class="card-description">
                 During my school years, I completed internships at new-data-services and Sharpness, gaining hands-on experience in software development and enhancing my practical skills in a real-world environment.
               </p>
-            </div>
+            </li>
             
-          </div>
+          </ul>
         </div>
       </section>
 
@@ -156,22 +162,22 @@
             <h3>Education</h3>
           </div>
           <!-- TODO: replace with real data -->
-          <div class="card-list">
-            <div class="card">
+          <ul class="card-list">
+            <li class="card">
               <h4 class="card-subtitle">Bachelor in Computer Science (2019 - 2024) </h3>
               <h3 class="card-title">IU Internationale Hochschule</h3>
               <p class="card-description">
                 Currently nearing the completion of my part-time studies in Computer Science at IU International University, where I've gained a comprehensive understanding of theoretical and practical aspects of software development and computer systems.
               </p>
-            </div>
-            <div class="card">
+            </li>
+            <li class="card">
               <h4 class="card-subtitle">Informationstechnischer Assistent (2015 - 2017)</h3>
               <h3 class="card-title">BZTG Oldenburg</h3>
               <p class="card-description">
                 I completed a vocational education as an "Informationstechnischer Assistent", where I gained a solid foundation in network technology, system administration, and software development.
               </p>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -197,7 +203,7 @@
           </div>
         </div>
       </section>
-    </div>
+    </main>
     
 
     
