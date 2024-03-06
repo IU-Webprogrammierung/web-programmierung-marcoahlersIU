@@ -51,7 +51,6 @@ a:hover {
   --foreground: #fff;
   --muted: #343a40;
   --muted-light: #e9ecef;
-  --primary: rgb(20 184 166);
 }
 
 @font-face {
@@ -137,20 +136,21 @@ body {
 
 .navigation-list-item-link {
   color: var(--muted);
+  opacity: 0.7;
   padding: 0rem 0.6rem;
-  transition-property: color;
+  transition-property: opacity;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 100ms;
+  transition-duration: 200ms;
   text-decoration: none !important;
   font-size: 0.8rem;
 }
 
 .navigation-list-item-link:hover {
-  color: var(--primary);
+  opacity: 1;
 }
 
 .navigation-list-item-link.active {
-  color: var(--primary);
+  opacity: 1;
 }
 
 .content {
