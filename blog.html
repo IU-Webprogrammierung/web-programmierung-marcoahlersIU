@@ -8,11 +8,25 @@
     <title>Blog</title>
   </head>
   <body>
+    <nav class="navigation">
+      <ul class="navigation-list">
+        <li class="navigation-list-item">
+          <a class="navigation-list-item-link" href="/index.html"> Home </a>
+        </li>
+        <li class="navigation-list-item">
+          <a class="navigation-list-item-link" href="/projects.html">
+            Projects
+          </a>
+        </li>
+        <li class="navigation-list-item">
+          <a class="navigation-list-item-link" href="/blog.html"> Articles </a>
+        </li>
+      </ul>
+    </nav>
+
     <main class="content">
       <!-- Hero-Section -->
       <header class="page-section">
-        <a href="./index.html" class="back-link">Back To Home</a>
-
         <div class="hero-section-text">
           <h1>Web Development & Beyond</h1>
           <p>
@@ -69,4 +83,16 @@
       </span>
     </footer>
   </body>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const links = document.querySelectorAll(".navigation-list-item-link");
+
+      for (const link of links) {
+        if (link.href === window.location.href) {
+          link.classList.add("active");
+        }
+      }
+    });
+  </script>
 </html>

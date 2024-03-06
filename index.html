@@ -7,7 +7,28 @@
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
     <title>Marco Ahlers - Software Developer</title>
   </head>
-  <body>
+  <body id="home">
+    <nav class="navigation">
+      <ul class="navigation-list">
+        <li class="navigation-list-item">
+          <a class="navigation-list-item-link" href="/index.html">
+            Home
+          </a>
+        </li>
+        <li class="navigation-list-item">
+          <a class="navigation-list-item-link" href="/projects.html">
+            Projects
+          </a>
+        </li>
+        <li class="navigation-list-item">
+          <a class="navigation-list-item-link" href="/blog.html">
+            Articles
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+
     <main class="content">
       <!-- Hero Section-->
       <header class="page-section">
@@ -93,7 +114,6 @@
           <div class="page-section-title">
             <h3>Blog</h3>
           </div>
-          <!-- TODO: link to real article pages -->
           <ul class="card-list">
             <li class="card">
               <h3 class="card-title">
@@ -161,7 +181,6 @@
           <div class="page-section-title">
             <h3>Education</h3>
           </div>
-          <!-- TODO: replace with real data -->
           <ul class="card-list">
             <li class="card">
               <h4 class="card-subtitle">Bachelor in Computer Science (2019 - 2024) </h3>
@@ -205,8 +224,6 @@
     </main>
     
 
-    
-
     <!-- Footer Section-->
     <footer class="footer">
       <hr class="divider">
@@ -214,5 +231,17 @@
         © 2024 Marco Ahlers. All Rights Reserved.
       </span>
     </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const links = document.querySelectorAll(".navigation-list-item-link");
+
+        for (const link of links) {
+          if (link.href === window.location.href) {
+            link.classList.add("active");
+          }
+        }
+      });
+    </script>
   </body>
 </html>

@@ -12,10 +12,26 @@
     <title>Hinweisgeber.in</title>
   </head>
   <body>
-    <main class="page-section">
-      <a href="../projects.html" class="back-link">Back To Overview</a>
+    <nav class="navigation">
+      <ul class="navigation-list">
+        <li class="navigation-list-item">
+          <a class="navigation-list-item-link" href="/index.html"> Home </a>
+        </li>
+        <li class="navigation-list-item">
+          <a class="navigation-list-item-link" href="/projects.html">
+            Projects
+          </a>
+        </li>
+        <li class="navigation-list-item">
+          <a class="navigation-list-item-link" href="/blog.html"> Articles </a>
+        </li>
+      </ul>
+    </nav>
 
+    <main class="page-section">
       <article class="content text-content">
+        <a href="../projects.html" class="back-link">Back To Overview</a>
+
         <h1>Enhancing Corporate Transparency: Hinweisgeber.in</h1>
 
         <p>
@@ -48,5 +64,17 @@
         © 2024 Marco Ahlers. All Rights Reserved.
       </span>
     </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const links = document.querySelectorAll(".navigation-list-item-link");
+
+        for (const link of links) {
+          if (link.href === window.location.href) {
+            link.classList.add("active");
+          }
+        }
+      });
+    </script>
   </body>
 </html>
