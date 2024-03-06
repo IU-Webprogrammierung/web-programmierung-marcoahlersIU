@@ -387,15 +387,8 @@ body {
 }
 
 .text-content {
-  max-width: 800px;
-  margin: 2rem auto 0 auto;
-  padding: 2rem;
-}
-
-@media (min-width: 800px) {
-  .text-content {
-    padding: 4rem;
-  }
+  max-width: 680px;
+  margin: 0 auto;
 }
 
 .text-content h1 {
