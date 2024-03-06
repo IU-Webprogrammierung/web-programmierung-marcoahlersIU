@@ -399,9 +399,10 @@ body {
 }
 
 .text-content p {
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: var(--muted);
   margin: 1rem 0;
+  line-height: 1.4rem;
 }
 
 .text-content img {
@@ -426,4 +427,26 @@ body {
   line-height: 1.1rem;
   color: var(--muted);
   margin-top: 0.5rem;
+}
+
+.back-button {
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  padding: 0.7rem;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 0.7rem;
+  border: 1px solid var(--muted-light);
+}
+
+.back-button:hover {
+  background-color: var(--background);
+  cursor: pointer;
+}
+
+.back-button svg {
+  width: 100%;
+  height: auto;
 }
