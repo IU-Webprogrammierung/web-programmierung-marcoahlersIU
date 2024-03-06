@@ -409,3 +409,21 @@ body {
   height: auto;
   margin: 1rem 0;
 }
+
+.tools-list {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 3rem;
+  max-width: 600px;
+}
+
+.tools-item-header {
+  font-weight: 700;
+}
+
+.tools-item-description {
+  font-size: 0.85rem;
+  line-height: 1.1rem;
+  color: var(--muted);
+  margin-top: 0.5rem;
+}
